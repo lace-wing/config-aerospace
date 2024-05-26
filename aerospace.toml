@@ -1,6 +1,6 @@
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
 
-start-at-login = false
+start-at-login = true
 after-login-command = []
 
 after-startup-command = []
