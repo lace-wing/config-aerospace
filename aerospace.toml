@@ -48,6 +48,20 @@ inherit-env-vars = true  # If you don't touch "exec" section, it will fallback t
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
+
+# auto float QQ image viewer & screen sharing
+[[on-window-detected]]
+if.app-id = 'com.tencent.qq'
+if.window-title-regex-substring = '(图片查看器|屏幕分享)'
+check-further-callbacks = true
+run = 'layout floating'
+
+# auto float shadowrocket
+[[on-window-detected]]
+if.app-id = 'com.liguangming.Shadowrocket'
+check-further-callbacks = true
+run = 'layout floating'
+
 [mode.main.binding]
 
 # All possible keys:
