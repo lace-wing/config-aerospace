@@ -49,10 +49,10 @@ inherit-env-vars = true  # If you don't touch "exec" section, it will fallback t
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
 
-# auto float QQ image viewer & screen sharing
+# auto float QQ misc windows
 [[on-window-detected]]
 if.app-id = 'com.tencent.qq'
-if.window-title-regex-substring = '(图片查看器|屏幕分享)'
+if.window-title-regex-substring = '(图片查看器|屏幕分享|.+的聊天记录)'
 check-further-callbacks = true
 run = 'layout floating'
 
