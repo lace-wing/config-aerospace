@@ -62,6 +62,12 @@ if.app-id = 'com.liguangming.Shadowrocket'
 check-further-callbacks = true
 run = 'layout floating'
 
+# auto float boop
+[[on-window-detected]]
+if.app-id = 'com.okatbest.boop'
+check-further-callbacks = true
+run = 'layout floating'
+
 [mode.main.binding]
 
 # All possible keys:
