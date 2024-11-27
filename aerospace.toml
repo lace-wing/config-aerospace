@@ -37,7 +37,7 @@ key-mapping.preset = 'qwerty'
 inner.horizontal = 0
 inner.vertical =   0
 outer.left =       0
-outer.bottom =     0
+outer.bottom =     -1
 outer.top =        0
 outer.right =      0
 
@@ -68,6 +68,12 @@ if.app-id = 'com.okatbest.boop'
 check-further-callbacks = true
 run = 'layout floating'
 
+# float little arc
+[[on-window-detected]]
+if.window-title-regex-substring = '^Little Arc .+$'
+check-further-callbacks = true
+run = 'layout floating'
+
 [mode.main.binding]
 
 # All possible keys:
@@ -83,7 +89,7 @@ run = 'layout floating'
 
 # All possible modifiers: cmd, alt, ctrl, shift
 
-alt-enter = 'exec-and-forget open -n -a wezterm'
+alt-enter = 'exec-and-forget open -n -a ghostty'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles accordion'
